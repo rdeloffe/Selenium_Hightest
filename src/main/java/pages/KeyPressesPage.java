@@ -16,7 +16,6 @@ public class KeyPressesPage {
         driver.findElement(inputField).sendKeys(text);
     }
 
-    
 
     public String getResult(){
         return driver.findElement(resultText).getText();
