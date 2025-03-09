@@ -27,6 +27,6 @@ public class BaseTests {
 
     @AfterClass
     public void teadDown(){
-        driver.quit();
+        //driver.quit();
     }
 }
