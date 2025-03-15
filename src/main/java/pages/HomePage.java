@@ -45,9 +45,21 @@ public class HomePage {
         return new AlertsPage(driver);
     }
 
+    public EntryAdPage clickEntryAd(){
+        clickLink("Entry Ad");
+        return new EntryAdPage(driver);
+    }
+
+    private ContextMenuPage clickContextMenu(){
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
+
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
+
+
 
 
 }
