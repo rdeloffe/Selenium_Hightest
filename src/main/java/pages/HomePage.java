@@ -50,7 +50,7 @@ public class HomePage {
         return new EntryAdPage(driver);
     }
 
-    private ContextMenuPage clickContextMenu(){
+    public ContextMenuPage clickContextMenu(){
         clickLink("Context Menu");
         return new ContextMenuPage(driver);
     }
